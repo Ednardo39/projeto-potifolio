@@ -59,3 +59,54 @@ nav#menu a:hover {
   background-color: var(--destaque-inverso);
   color: var(--destaque);
 }
+
+main {
+    display: grid; /* Define o layout como grid */
+    grid-template-columns: auto 90vm auto; /* Define três colunas, sendo a do meio com largura de 90% da viewport */
+    gap: 20px; /* Adiciona espaço entre as colunas */
+    margin-top: 20px; /* Adiciona espaço acima do conteúdo principal */
+}
+
+section#ficha {
+    background-color: var(--fundo-card);
+    padding: 20px;
+    border-radius: 8px;
+    grid-column: 2; /* Centraliza a seção na segunda coluna */
+}
+
+section#ficha img.foto {
+    width: 200px; /* Define a largura da imagem */
+    aspect-ratio: 1/1; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorção */
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites do contêiner */
+    border-radius: 50%; /* Faz a imagem ficar redonda */
+    border: 5px solid var(--fundo-card); /* Adiciona uma borda vermelha */
+    outline: 5px solid var(--destaque); /* Adiciona um contorno azul */
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    margin-bottom: 15px; /* Adiciona espaço abaixo da imagem */
+}
+
+section#ficha h1 {
+    color: var(--destaque); /* Define a cor do texto como azul */
+    margin: 15px 0; /* Adiciona espaço acima e abaixo do título */
+    font-size: 1.5em; /* Define o tamanho da fonte do título */
+    text-align: left; /* Centraliza o título */
+}
+
+div#social {
+    display: flex; /* Exibe os ícones em linha */
+    justify-content: center; /* Alinha os ícones à esquerda */
+    align-items: center; /* Alinha os ícones verticalmente */
+    gap: 1em; /* Adiciona espaço entre os ícones */
+    margin-top: 15px; /* Adiciona espaço acima dos ícones */
+    
+}
+
+div#social a {
+    color: var(--destaque); /* Define a cor dos ícones como azul */
+    transition: color 0.5s; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+div#social a:hover {
+    color: var(--destaque-inverso); /* Muda a cor dos ícones para azul claro ao passar o mouse */
+}
