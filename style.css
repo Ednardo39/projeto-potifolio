@@ -110,3 +110,34 @@ div#social a {
 div#social a:hover {
     color: var(--destaque-inverso); /* Muda a cor dos ícones para azul claro ao passar o mouse */
 }
+
+section#detalhes {
+    grid-column: 2; /* Centraliza a seção na segunda coluna */
+}
+
+article {
+    background-color: var(--fundo-card); /* Define a cor de fundo do card */
+    padding: 20px; /* Adiciona espaçamento interno */
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo do card */
+    border-radius: 8px; /* Adiciona cantos arredondados */
+}
+
+article h2 {
+    color: var(--destaque); /* Define a cor do título como azul */
+    margin-bottom: 10px; /* Adiciona espaçamento abaixo do título */
+}
+
+.video-container {
+    position: relative; /* Define o posicionamento relativo para o contêiner do vídeo */
+    width: 100%; /* Faz o vídeo ocupar toda a largura do card */
+    margin: auto; /* Centraliza o vídeo horizontalmente */
+    aspect-ratio: 16/9; /* Mantém a proporção do vídeo */
+}
+
+.video-container iframe {
+    position: absolute; /* Define o posicionamento absoluto para o iframe do vídeo */
+    top: 0; /* Posiciona o topo do iframe no topo do contêiner */
+    left: 0; /* Posiciona a esquerda do iframe na esquerda do contêiner */
+    width: 100%; /* Faz o iframe ocupar toda a largura do contêiner */
+    height: 100%; /* Faz o iframe ocupar toda a altura do contêiner */
+}
